@@ -12,7 +12,7 @@ class Task:
 
     def update_description(self, new_description):
         """Update the task description"""
-        pass
+        self.description = new_description
 
     def update_due_date(self, new_due_date):
         """Update the task due date"""
