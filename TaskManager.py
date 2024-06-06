@@ -56,8 +56,8 @@ class TaskManager:
         pass
 
     def display_all_tasks(self):
-        if not tasks.length == 0:
-            for task in tasks:
+        if not len(self.tasks) == 0:
+            for task in self.tasks:
                 print(f"Task: {task.description}, Priority: {task.priority}, Due date: {task.due_date}")
             return
         print("No tasks")
@@ -70,8 +70,8 @@ class TaskManager:
         """Display all completed tasks"""
         if self.tasks == 0:
             print("No tasks completed")
-        else
-        return self.tasks
+        else:
+            return self.tasks
 
     def save_tasks_to_file(self, filename):
         """Save all tasks to a file"""
