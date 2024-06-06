@@ -66,9 +66,9 @@ class TaskManager:
         """Display all completed tasks"""
         pass
 
-    def save_tasks_to_file(self, filename):
-        """Save all tasks to a file"""
-        pass
+    def save_tasks_to_file(self, task): #Dorian
+        with open('tasks.txt', 'a') as f:
+            f.write(self.task) #Update this to whatever the name actaully is.
 
     def load_tasks_from_file(self, filename):
         """Load tasks from a file"""
