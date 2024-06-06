@@ -32,8 +32,7 @@ class TaskManager:
         self.tasks = []
 
     def add_task(self, id, description, due_date, priority):
-        """Add a new task to the task list"""
-        pass
+        self.tasks.append(Task(id, description, due_date, priority))
 
     def remove_task(self, task_id):
         for task in self.tasks:
@@ -57,8 +56,11 @@ class TaskManager:
         pass
 
     def display_all_tasks(self):
-        """Display all tasks"""
-        pass
+        if not tasks.length == 0:
+            for task in tasks:
+                print(f"Task: {task.description}, Priority: {task.priority}, Due date: {task.due_date}")
+            return
+        print("No tasks")
 
     def display_pending_tasks(self):
         """Display all pending (not completed) tasks"""
@@ -66,7 +68,10 @@ class TaskManager:
 
     def display_completed_tasks(self):
         """Display all completed tasks"""
-        pass
+        if self.tasks == 0:
+            print("No tasks completed")
+        else
+        return self.tasks
 
     def save_tasks_to_file(self, filename):
         """Save all tasks to a file"""
