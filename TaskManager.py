@@ -71,8 +71,14 @@ class TaskManager:
         pass
 
     def load_tasks_from_file(self, filename):
-        """Load tasks from a file"""
-        pass
+        try:
+            open(filename) as file:
+            for line in file:
+                self.tasks.append(description, due_date, priority, completed)
+        except FileNotFoundError:
+            print(f'{filename} was not found')
+            return None
+        
 
     def sort_tasks_by_due_date(self):
         """Sort tasks by their due dates"""
