@@ -31,7 +31,7 @@ class TaskManager:
         self.tasks = []
 
     def add_task(self, description, due_date, priority):
-        """Add a new task to the task list""" # Dominic
+        """Add a new task to the task list""" # Dominic <3 
         self.tasks.append(Task(description, due_date, priority))
 
     def remove_task(self, task_id):
