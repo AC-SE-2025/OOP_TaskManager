@@ -32,7 +32,7 @@ class TaskManager:
 
     def add_task(self, description, due_date, priority):
         """Add a new task to the task list""" # Dominic
-        pass
+        self.tasks.append(Task(description, due_date, priority))
 
     def remove_task(self, task_id):
         """Remove a task by its ID"""
