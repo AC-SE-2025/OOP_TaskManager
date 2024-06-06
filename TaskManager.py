@@ -59,7 +59,7 @@ class TaskManager:
         if self.tasks == []:
             print("No tasks to show.")
         else:
-            retunr self.tasks
+            return self.tasks
 
     def display_pending_tasks(self):
         """Display all pending (not completed) tasks"""
