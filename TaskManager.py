@@ -35,8 +35,9 @@ class TaskManager:
         pass
 
     def remove_task(self, task_id):
-        """Remove a task by its ID"""
-        pass
+        for task in self.tasks:
+            if task == task_id:
+                self.tasks.remove(task)
 
     def mark_task_completed(self, task_id):
         """Mark a specific task as completed by its ID"""
