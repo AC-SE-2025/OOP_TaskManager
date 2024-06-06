@@ -59,8 +59,12 @@ class TaskManager:
         pass
 
     def display_pending_tasks(self):
-        """Display all pending (not completed) tasks"""
-        pass
+        if task.completed == False:
+            for tasks in task:
+                print (f"Task:{task.description}, Due Date:{self.due_date}, Priority:{self.priority")
+            return
+        else:
+            return ("Unavailable")
 
     def display_completed_tasks(self):
         """Display all completed tasks"""
