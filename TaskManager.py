@@ -7,7 +7,7 @@ class Task:
 
     def mark_completed(self):
         self.completed = True
-        Print(f'{task.discription} has been completed')
+        Print(f'{task.id} has been completed')
 
     def update_description(self, new_description):
         """Update the task description"""
