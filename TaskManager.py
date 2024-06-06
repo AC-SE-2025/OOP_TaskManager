@@ -1,5 +1,6 @@
 class Task:
-    def __init__(self, description, due_date, priority):
+    def __init__(self, id, description, due_date, priority):
+        self.id = id
         self.description = description
         self.due_date = due_date
         self.priority = priority
@@ -30,7 +31,7 @@ class TaskManager:
     def __init__(self):
         self.tasks = []
 
-    def add_task(self, description, due_date, priority):
+    def add_task(self, id, description, due_date, priority):
         """Add a new task to the task list"""
         pass
 
@@ -87,6 +88,6 @@ class TaskManager:
 # Example usage
 if __name__ == "__main__":
     task_manager = TaskManager()
-    task_manager.add_task("Complete homework", "2024-06-10", "High")
-    task_manager.add_task("Buy groceries", "2024-06-05", "Medium")
+    task_manager.add_task(1, "Complete homework", "2024-06-10", "High")
+    task_manager.add_task(1, "Buy groceries", "2024-06-05", "Medium")
     task_manager.display_all_tasks()
