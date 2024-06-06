@@ -7,8 +7,8 @@ class Task:
         self.completed = False
 
     def mark_completed(self):
-        """Mark the task as completed"""
-        pass
+        self.completed = True
+        Print(f'{task.discription} has been completed')
 
     def update_description(self, new_description):
         """Update the task description"""
